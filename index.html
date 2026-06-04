@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A modern personal portfolio for a designer and front-end developer."
+    />
+    <title>Farsha | Portfolio</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Farsha home">
+        <span class="brand-mark">F</span>
+        <span>Farsha</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <span aria-hidden="true"></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80"
+            alt=""
+          />
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">Designer + Front-End Developer</p>
+          <h1 id="hero-title">Farsha builds clean digital products with practical detail.</h1>
+          <p class="hero-copy">
+            Portfolio website for web interfaces, product pages, and polished user experiences.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">View Work</a>
+            <a class="button secondary" href="mailto:farsha08septa@gmail.com">Email Me</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro" aria-label="Portfolio summary">
+        <div class="stat">
+          <strong>12+</strong>
+          <span>Completed projects</span>
+        </div>
+        <div class="stat">
+          <strong>4</strong>
+          <span>Core specialties</span>
+        </div>
+        <div class="stat">
+          <strong>2024-2027</strong>
+          <span>SMK student</span>
+        </div>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="work-title">Recent projects</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=80"
+              alt="Team reviewing a web dashboard"
+            />
+            <div class="project-body">
+              <span class="tag">Web App</span>
+              <h3>FinSmart</h3>
+              <p>A smart financial management application for personal finance tracking and analysis.</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+              alt="Laptop showing a web product interface"
+            />
+            <div class="project-body">
+              <span class="tag">Landing Page</span>
+              <h3>Ihyaul Qur'an</h3>
+              <p>This is my first project. It's a simple web application for learning the Quran.</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
+              alt="Workspace with charts and planning material"
+            />
+            <div class="project-body">
+              <span class="tag">Portfolio Web</span>
+              <h3>My First Portfolio</h3>
+              <p>A simple yet elegant portfolio website to showcase my work and skills.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="skills" aria-labelledby="skills-title">
+        <div>
+          <p class="eyebrow">Capabilities</p>
+          <h2 id="skills-title">What I can help with</h2>
+          <p class="section-copy">
+            I combine practical UI structure with front-end implementation so ideas move from rough
+            direction to usable screens quickly.
+          </p>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <span>01</span>
+            <strong>Responsive Web Design</strong>
+          </div>
+          <div class="skill-item">
+            <span>02</span>
+            <strong>HTML, CSS, JavaScript</strong>
+          </div>
+          <div class="skill-item">
+            <span>03</span>
+            <strong>Product UI Layouts</strong>
+          </div>
+          <div class="skill-item">
+            <span>04</span>
+            <strong>Portfolio & Brand Sites</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <img
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80"
+          alt="Creative team workspace with laptops"
+        />
+        <div>
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">A sharp portfolio starter, ready to personalize.</h2>
+          <p>
+            This site is built as a polished foundation: strong visual hierarchy, project cards,
+            skills, contact details, and responsive behavior. Replace the sample project text,
+            links, and images with your real work when ready.
+          </p>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let&rsquo;s build something useful.</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:farsha08septa@gmail.com">farsha08septa@gmail.com</a>
+          <a
+            class="button secondary"
+            href="https://www.linkedin.com/in/muhammad-farsha-septa-b897083a5/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a class="button secondary" href="https://github.com/Farshasepta" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Farsha. All rights reserved.</span>
+      <a href="#home">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
