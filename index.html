@@ -3,179 +3,230 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A modern personal portfolio for a designer and front-end developer."
-    />
+    <meta name="description" content="Farsha — Designer & Front-End Developer crafting clean, modern digital experiences." />
     <title>Farsha | Portfolio</title>
-    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#home" aria-label="Farsha home">
-        <span class="brand-mark">F</span>
-        <span>Farsha</span>
-      </a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#skills">Skills</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
-        <span aria-hidden="true"></span>
-      </button>
+    <header class="site-header" id="header">
+      <div class="header-inner">
+        <a class="brand" href="#home" aria-label="Farsha home">
+          <span class="brand-mark">F</span>
+          <span class="brand-text">Farsha</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#work" data-section="work">Work</a>
+          <a href="#skills" data-section="skills">Skills</a>
+          <a href="#about" data-section="about">About</a>
+          <a href="#contact" data-section="contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
     </header>
 
     <main>
       <section class="hero" id="home" aria-labelledby="hero-title">
-        <div class="hero-media" aria-hidden="true">
-          <img
-            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80"
-            alt=""
-          />
+        <div class="hero-bg" aria-hidden="true">
+          <div class="hero-blob hero-blob--1"></div>
+          <div class="hero-blob hero-blob--2"></div>
+          <div class="hero-blob hero-blob--3"></div>
+          <div class="hero-grid-overlay"></div>
         </div>
-        <div class="hero-content">
-          <p class="eyebrow">Designer + Front-End Developer</p>
-          <h1 id="hero-title">Farsha builds clean digital products with practical detail.</h1>
-          <p class="hero-copy">
-            Portfolio website for web interfaces, product pages, and polished user experiences.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#work">View Work</a>
-            <a class="button secondary" href="mailto:farsha08septa@gmail.com">Email Me</a>
+        <div class="hero-layout">
+          <div class="hero-content">
+            <p class="eyebrow">Designer &amp; Front-End Developer</p>
+            <h1 id="hero-title">I build digital products with purpose and precision.</h1>
+            <p class="hero-copy">
+              Crafting clean web interfaces, product pages, and polished user experiences — from concept to code.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#work">
+                View My Work
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a class="button ghost" href="mailto:farsha08septa@gmail.com">Get In Touch</a>
+            </div>
           </div>
+          <div class="hero-photo">
+            <img src="assets/profile.jpg" alt="Farsha" />
+          </div>
+        </div>
+        <div class="hero-scroll" aria-hidden="true">
+          <span>Scroll</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
         </div>
       </section>
 
-      <section class="section intro" aria-label="Portfolio summary">
-        <div class="stat">
-          <strong>12+</strong>
-          <span>Completed projects</span>
+      <section class="section stats" aria-label="Portfolio highlights" id="stats">
+        <div class="stat glass-card">
+          <strong class="counter" data-target="12" data-suffix="+">0</strong>
+          <span>Projects completed</span>
         </div>
-        <div class="stat">
-          <strong>4</strong>
+        <div class="stat glass-card">
+          <strong class="counter" data-target="4">0</strong>
           <span>Core specialties</span>
         </div>
-        <div class="stat">
-          <strong>2024-2027</strong>
+        <div class="stat glass-card">
+          <strong>2024–<span class="counter" data-target="2027">0</span></strong>
           <span>SMK student</span>
+        </div>
+        <div class="stat glass-card">
+          <strong class="counter" data-target="100" data-suffix="%">0</strong>
+          <span>Pixel-perfect</span>
         </div>
       </section>
 
       <section class="section" id="work" aria-labelledby="work-title">
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <p class="eyebrow">Selected Work</p>
           <h2 id="work-title">Recent projects</h2>
+          <p class="section-subtitle">A curated selection of recent work across web apps, landing pages, and portfolios.</p>
         </div>
         <div class="project-grid">
-          <article class="project-card">
-            <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=80"
-              alt="Team reviewing a web dashboard"
-            />
+          <article class="project-card glass-card reveal">
+            <div class="project-image">
+              <img src="finsmart.svg" alt="FinSmart financial dashboard" loading="lazy" class="contain" />
+            </div>
             <div class="project-body">
               <span class="tag">Web App</span>
               <h3>FinSmart</h3>
               <p>A smart financial management application for personal finance tracking and analysis.</p>
+              <a href="https://finsmart-mu.vercel.app/" target="_blank" rel="noreferrer" class="project-link">
+                View Project
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
             </div>
           </article>
-          <article class="project-card">
-            <img
-              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
-              alt="Laptop showing a web product interface"
-            />
+          <article class="project-card glass-card reveal">
+            <div class="project-image">
+              <img src="ihyaqu.jpg" alt="Ihyaul Qur'an landing page" loading="lazy" />
+            </div>
             <div class="project-body">
               <span class="tag">Landing Page</span>
               <h3>Ihyaul Qur'an</h3>
-              <p>This is my first project. It's a simple web application for learning the Quran.</p>
+              <p>A simple web application for learning the Quran with clean, intuitive interface design.</p>
+              <a href="https://farshasepta.github.io/IhyaulQuran/" target="_blank" rel="noreferrer" class="project-link">
+                View Project
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
             </div>
           </article>
-          <article class="project-card">
-            <img
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
-              alt="Workspace with charts and planning material"
-            />
+          <article class="project-card glass-card reveal">
+            <div class="project-image">
+              <img src="hwf.svg" alt="Healthy With Fruit! game" loading="lazy" />
+            </div>
             <div class="project-body">
-              <span class="tag">Portfolio Web</span>
-              <h3>My First Portfolio</h3>
-              <p>A simple yet elegant portfolio website to showcase my work and skills.</p>
+              <span class="tag">Game</span>
+              <h3>Healthy With Fruit!</h3>
+              <p>An educational board game teaching kids about healthy eating through fun gameplay.</p>
+              <a href="https://healthy-with-fruit-six.vercel.app/" target="_blank" rel="noreferrer" class="project-link">
+                View Project
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section split" id="skills" aria-labelledby="skills-title">
-        <div>
-          <p class="eyebrow">Capabilities</p>
-          <h2 id="skills-title">What I can help with</h2>
-          <p class="section-copy">
-            I combine practical UI structure with front-end implementation so ideas move from rough
-            direction to usable screens quickly.
-          </p>
-        </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <span>01</span>
-            <strong>Responsive Web Design</strong>
+      <section class="section skills" id="skills" aria-labelledby="skills-title">
+        <div class="skills-layout">
+          <div class="skills-intro reveal">
+            <p class="eyebrow">Capabilities</p>
+            <h2 id="skills-title">What I bring to the table</h2>
+            <p class="section-subtitle">
+              I combine practical UI structure with front-end implementation so ideas move from concept to usable screens quickly.
+            </p>
           </div>
-          <div class="skill-item">
-            <span>02</span>
-            <strong>HTML, CSS, JavaScript</strong>
-          </div>
-          <div class="skill-item">
-            <span>03</span>
-            <strong>Product UI Layouts</strong>
-          </div>
-          <div class="skill-item">
-            <span>04</span>
-            <strong>Portfolio & Brand Sites</strong>
+          <div class="skill-grid reveal">
+            <div class="skill-item glass-card">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <strong>Responsive Web Design</strong>
+              <p>Fluid layouts that adapt seamlessly across every device and screen size.</p>
+            </div>
+            <div class="skill-item glass-card">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <strong>HTML, CSS &amp; JavaScript</strong>
+              <p>Clean, semantic markup with modern CSS and vanilla JS interactivity.</p>
+            </div>
+            <div class="skill-item glass-card">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+              </div>
+              <strong>Product UI Layouts</strong>
+              <p>Structured, conversion-focused interfaces for SaaS and digital products.</p>
+            </div>
+            <div class="skill-item glass-card">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              </div>
+              <strong>Portfolio &amp; Brand Sites</strong>
+              <p>Distinctive personal and business sites that leave lasting impressions.</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section about" id="about" aria-labelledby="about-title">
-        <img
-          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80"
-          alt="Creative team workspace with laptops"
-        />
-        <div>
-          <p class="eyebrow">About</p>
-          <h2 id="about-title">A sharp portfolio starter, ready to personalize.</h2>
+        <div class="about-image glass-card reveal">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80" alt="Creative team workspace with laptops" loading="lazy" />
+        </div>
+        <div class="about-content reveal">
+          <p class="eyebrow">About Me</p>
+          <h2 id="about-title">Turning ideas into polished, production-ready interfaces.</h2>
           <p>
-            This site is built as a polished foundation: strong visual hierarchy, project cards,
-            skills, contact details, and responsive behavior. Replace the sample project text,
-            links, and images with your real work when ready.
+            I'm Farsha, a designer and front-end developer passionate about crafting digital experiences that are both beautiful and functional. Currently studying at SMK, I focus on building clean, accessible web interfaces with modern tooling and best practices.
           </p>
+          <p>
+            Every project I take on is an opportunity to push my skills further — from responsive layouts to interactive UI components, I aim for code that's as clean as the design it brings to life.
+          </p>
+          <div class="about-links">
+            <a href="https://github.com/Farshasepta" target="_blank" rel="noreferrer" class="button secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-farsha-septa-b897083a5/" target="_blank" rel="noreferrer" class="button secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+          </div>
         </div>
       </section>
 
       <section class="section contact" id="contact" aria-labelledby="contact-title">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Let&rsquo;s build something useful.</h2>
-        </div>
-        <div class="contact-actions">
-          <a class="button primary" href="mailto:farsha08septa@gmail.com">farsha08septa@gmail.com</a>
-          <a
-            class="button secondary"
-            href="https://www.linkedin.com/in/muhammad-farsha-septa-b897083a5/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
-          <a class="button secondary" href="https://github.com/Farshasepta" target="_blank" rel="noreferrer">
-            GitHub
-          </a>
+        <div class="contact-inner glass-card">
+          <p class="eyebrow">Get In Touch</p>
+          <h2 id="contact-title">Let&rsquo;s build something great together.</h2>
+          <p class="contact-copy">
+            I'm currently open to freelance opportunities and interesting projects. Whether you have a project in mind or just want to say hello, I'd love to hear from you.
+          </p>
+          <div class="contact-actions">
+            <a class="button primary" href="mailto:farsha08septa@gmail.com">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              farsha08septa@gmail.com
+            </a>
+            <a class="button glass-outline" href="https://www.linkedin.com/in/muhammad-farsha-septa-b897083a5/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button glass-outline" href="https://github.com/Farshasepta" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>&copy; 2026 Farsha. All rights reserved.</span>
-      <a href="#home">Back to top</a>
+      <a href="#home" class="back-to-top">
+        Back to top
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      </a>
     </footer>
 
     <script src="script.js"></script>
