@@ -14,14 +14,13 @@
     <header class="site-header" id="header">
       <div class="header-inner">
         <a class="brand" href="#home" aria-label="Farsha home">
-          <span class="brand-mark">F</span>
           <span class="brand-text">Farsha</span>
         </a>
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="#work" data-section="work">Work</a>
           <a href="#skills" data-section="skills">Skills</a>
           <a href="#about" data-section="about">About</a>
-          <a href="#contact" data-section="contact">Contact</a>
+          <a href="http://localhost/crud_php/login.php">Login</a>
         </nav>
         <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
           <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -45,7 +44,7 @@
             <p class="hero-copy">
               Crafting clean web interfaces, product pages, and polished user experiences — from concept to code.
             </p>
-            <div class="hero-actions">
+            <div class="hero-actions" style="justify-content: start; margin-left: 5px;">
               <a class="button primary" href="#work">
                 View My Work
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
@@ -89,6 +88,20 @@
           <p class="section-subtitle">A curated selection of recent work across web apps, landing pages, and portfolios.</p>
         </div>
         <div class="project-grid">
+          <article class="project-card glass-card reveal">
+            <div class="project-image">
+              <img src="assets/crud-php.jpg" alt="CRUD PHP full-stack application" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <span class="tag">Full-Stack</span>
+              <h3>CRUD PHP</h3>
+              <p>Aplikasi CRUD full-stack dengan PHP & MySQL untuk manajemen data barang, mahasiswa, dan pegawai — dilengkapi multi-role login, export PDF/Excel, dan barcode generator.</p>
+              <span class="project-link" style="color: var(--muted); cursor: default;">
+                Local Project
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </span>
+            </div>
+          </article>
           <article class="project-card glass-card reveal">
             <div class="project-image">
               <img src="assets/finsmart.svg" alt="FinSmart financial dashboard" loading="lazy" class="contain" />
